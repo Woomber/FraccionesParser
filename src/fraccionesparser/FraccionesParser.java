@@ -29,10 +29,11 @@ public class FraccionesParser {
             // Lectura de datos
             System.out.println("Ingrese operacion en texto> ");
             data = scanner.next();
+
+            if(data.trim().equals("")) return;
             
             // Resolver e imprimir
-            if(!data.equals(""))
-                System.out.println(parser.solve(data) + "\n");  
+            System.out.println(parser.solve(data) + "\n");  
             
         }while(!data.equals(""));
     }
